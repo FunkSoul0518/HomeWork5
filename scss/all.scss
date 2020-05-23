@@ -1,0 +1,143 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  list-style: none;
+}
+
+.font-size-xs {
+  font-size: 12px;
+  margin: 0;
+}
+
+.font-size-s {
+  font-size: 16px;
+
+}
+
+.cardBox {
+  padding: 12px;
+}
+
+.box1 {
+  background: #EDF4EE;
+
+}
+
+.box1-text {
+  color: #2A8356;
+}
+
+.main-color-border {
+  border: 1px solid #CDDDCD;
+}
+
+.wrap {
+  display: flex;
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 296px;
+    // border: 1px solid gray
+    background: #EDF4EE;
+
+
+    .side_index {
+      padding-left: 0;
+      font-weight: bold;
+
+      li {
+        margin-bottom: 30px;
+      }
+    }
+
+    .sidebar_footer {
+      display: flex;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+
+  }
+
+  .container {
+    margin-left: 296px;
+
+    .main {
+      padding: 0 20px;
+    }
+  }
+}
+
+
+.user {
+  li>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}
+
+.jumpText {
+  // display: none;
+  transition: all 1s;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+
+  .bodyText {
+    border: none;
+    outline: none;
+  }
+
+  li {
+    margin-right: 24px;
+    margin-top: 10px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 100%;
+  }
+
+  .formGroup {
+    transition: all 5s;
+  }
+
+  .btnGroup {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+
+
+// admin
+
+.table {
+
+  // width: 100%;
+
+  tr:hover {
+    background: #EDF4EE
+  }
+
+  th {
+    width: 25%;
+  }
+}
+
+.btn-group {
+  width: 30%;
+  margin-left: auto;
+}
